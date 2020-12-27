@@ -188,6 +188,9 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
                )
+
+server = app.server
+
 # When you have tabs, you need this setting to not get a constant 
 # exception
 app.config['suppress_callback_exceptions'] = True
